@@ -29,6 +29,10 @@ body {
     color: #434455;
 }
 
+img{
+    display: block;
+}
+
 .container{
     width: 1158px;
     padding-left: 15px;
@@ -50,25 +54,17 @@ body {
     text-transform: uppercase;
     color: #4D5AE5;
     display: inline block;
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin-right: 76px;
  } 
 
 .header{
     border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0;
 }
 
 .header-nav{
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.header-item{
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-nav-list{
@@ -79,8 +75,6 @@ body {
 .header-address {
     font-style: normal;
     margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-contact-list{
@@ -175,10 +169,19 @@ body {
     width: calc((100% - 24px * 3) / 4);
 }
 
-.skills-visually-hidden{
-    visibility: hidden;
-    margin-bottom: 8px;
-}
+.skills-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
  .skills-subtitle {
     color: #2E2F42;
