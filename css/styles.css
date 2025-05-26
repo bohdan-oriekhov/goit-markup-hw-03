@@ -74,7 +74,6 @@ img{
 .header-address {
     font-style: normal;
     margin-left: auto;
-    padding: 24px 0;
 }
 
 .header-contact-list{
@@ -88,6 +87,7 @@ img{
    font-size: 16px;
    line-height: 150%;
    letter-spacing: 0.02em;
+   padding: 24px 0;
  }
 
  .header-nav-link:active {
